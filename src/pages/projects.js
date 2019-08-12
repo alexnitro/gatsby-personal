@@ -2,18 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 //Load Ins
-import AlexPointing from '../../static/alex-image-pointing.jpg';
+import AlexPointing from '../../static/alex-homepage.jpg';
 import Layout from '../../components/layouts/Layout';
 import StartingOut from '../../components/StartingOut';
 
-const Contact = () => {
+const Projects = () => {
     return (
         <Layout>
             <Helmet>
-                <title>Contact Me</title>
+                <title>My Projects</title>
             </Helmet>
             <StartingOut
-                title="You should be able to contact me....soon 🤷‍♂️"
+                title="Oh I've got projects...really! I really do! 😝"
                 imageSrc={AlexPointing}
                 altImage="Alex teeth"
             />
@@ -21,4 +21,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Projects

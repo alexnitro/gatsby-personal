@@ -1,0 +1,30 @@
+
+nav {
+    padding:10px 0 10px;
+    margin:0;
+    position:fixed;
+    top:0;
+    width:100%;
+    .flex-row {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left {
+        a {
+            color:#FFF;
+        }
+    }
+
+    ul {
+        width:500px;
+        text-align: right;
+        li {
+            display: inline-block;
+            margin-left: 40px;
+            a {
+                padding:20px;
+                color:#FFF;
+            }
+        }
+    }
+}

@@ -1,24 +1,23 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 //Load Ins
-import Header from '../../components/Header';
-import Image from '../../components/images/Image200';
 import AlexTeeth from '../../static/alex-teeth.jpg';
+import Layout from '../../components/layouts/Layout';
+import StartingOut from '../../components/StartingOut';
 
 const About = () => {
     return (
-        <div className="app about">
+        <Layout>
             <Helmet>
                 <title>About Me</title>
             </Helmet>
-            <header>
-                <Header title="I said...the new Gatsby site is coming soon 🤦" />
-                <Image location={AlexTeeth} altImage="Alex's teeth" />      
-                <Link style={{marginTop:'40px',display:'inline-block'}} to="/">Back to Home</Link>
-            </header>
-        </div>
+            <StartingOut
+                title="I said...the new Gatsby site is coming soon 🤦"
+                imageSrc={AlexTeeth}
+                altImage="Alex teeth"
+            />
+        </Layout>
     )
 }
 

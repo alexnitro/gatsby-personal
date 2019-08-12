@@ -1,28 +1,24 @@
 import React from "react"
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 //Load Ins
-import Header from '../../components/Header';
-import Container from '../../components/Container';
-import Image from '../../components/images/Image200';
 import AlexImage from '../../static/alex-looking.jpeg';
+import Layout from '../../components/layouts/Layout';
+import StartingOut from '../../components/StartingOut';
 
 
 const Index = () => {
     return (
-        <div className="app">
+        <Layout>
             <Helmet>
                 <title>Alex Acker</title>
             </Helmet>
-            <header>
-                <Container>
-                    <Header title="New Gatsby Website Coming Soon" />
-                    <Image location={AlexImage} altImage="Alex thinking" />
-                    <Link style={{marginTop:'40px',display:'inline-block'}} to="/about">About</Link>
-                </Container>
-            </header>
-        </div>
+            <StartingOut
+                title="New Gatsby Site in progress here..."
+                imageSrc={AlexImage}
+                altImage="Alex looking"
+            />
+        </Layout>
     )
 }
 
